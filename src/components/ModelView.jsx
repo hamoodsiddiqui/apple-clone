@@ -26,7 +26,6 @@ const ModelView = ({
       id={gsapType}
       className={`w-full h-full absolute ${index === 2 ? "right-[-100%]" : ""}`}
     >
-      {/* Ambient Light */}
       <ambientLight intensity={0.3} />
 
       <PerspectiveCamera makeDefault position={[0, 0, 4]} />
@@ -37,7 +36,7 @@ const ModelView = ({
         makeDefault
         ref={controlRef}
         enableZoom={false}
-        enablePan={false}
+        enablePan={true}
         rotateSpeed={0.4}
         target={new THREE.Vector3(0, 0, 0)}
         onEnd={() => setRotationState(controlRef.current.getAzimuthalAngle())}

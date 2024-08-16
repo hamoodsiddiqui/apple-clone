@@ -54,7 +54,7 @@ const Model = () => {
     <section className="common-padding">
       <div className="screen-max-width">
         <h1 id="heading" className="section-heading">
-          Take a closer look.
+          قریب سے دیکھو
         </h1>
         <div className="flex flex-col items-center mt-5">
           <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
@@ -86,9 +86,9 @@ const Model = () => {
                 right: 0,
                 overflow: "hidden",
               }}
+              eventSource={document.getElementById("root")}
             >
-              <View index={1} />
-              <View index={2} />
+              <View.Port />
             </Canvas>
           </div>
           <div className="mx-auto w-full">
